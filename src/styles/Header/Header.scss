@@ -1,0 +1,32 @@
+header{
+    height: 240px;
+    width: 100%;
+    .container{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        .logo{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            font-weight: 700;
+            font-size: 72px;
+        }
+        @media(max-width: 900px){
+            span{
+                display: none;
+            }
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    }
+    
+}
