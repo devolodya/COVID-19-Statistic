@@ -6,7 +6,7 @@ import recoveredIcon from "../../images/recoveredIcon.svg";
 const Popup = (props: any) => {
   return (
     <div className="popup">
-      <div className="popupBody">
+      <div className="popupBody" onClick={(e) => e.stopPropagation()}>
         <div className="country">{props.Country}</div>
         <div className="stats">
           <div className="statsleftSide">
@@ -29,7 +29,7 @@ const Popup = (props: any) => {
           </div>
           {props.TotalRecovered}
         </div>
-        <button>OK</button>
+        <button onClick={props.openCheck}>OK</button>
       </div>
     </div>
   );

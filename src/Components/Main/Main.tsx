@@ -25,6 +25,7 @@ const Main: React.FC<MainProps> = () => {
     async function getData() {
       try {
         if (items.length === 0 && sortSelector.items.length === 0) {
+          console.log("Created by Volodymyr Kravets");
           const response = await axios("https://api.covid19api.com/summary");
           dispatch(initArray(response.data.Countries));
           if (response.data.Message != "") {
@@ -47,7 +48,7 @@ const Main: React.FC<MainProps> = () => {
     <main>
       <div className="container">
         <MainItem
-          style={{ background: "#2196F3", color: "#fff" }}
+          style={{ background: "#2196F3", color: "#fff", cursor: "initial" }}
           Country="Country"
           TotalConfirmed="Total Confirmed"
           index=""

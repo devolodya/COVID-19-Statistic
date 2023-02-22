@@ -16,7 +16,7 @@ const MainItem = (props: any) => {
       </div>
       <div className="country">{props.Country}</div>
       <div className="stats">{props.TotalConfirmed}</div>
-      {open ? <Popup {...props} /> : ""}
+      {open ? <Popup {...props} openCheck={openCheck} /> : ""}
     </div>
   );
 };
