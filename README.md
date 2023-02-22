@@ -1,6 +1,6 @@
 # About Application
 
-COVID-19 Application, created by Volodymyr Kravets, which shows statistic by countries.
+COVID-19 Application, created for [Codempire](https://codempire.io/) by Volodymyr Kravets, which shows statistic by countries.
 
 ## Technologies
 
