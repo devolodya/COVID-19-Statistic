@@ -8,6 +8,7 @@ COVID-19 Application, created by Volodymyr Kravets, which shows statistic by cou
 2. TypeScript to write more effective any structured code;
 3. Redux Toolkit to easily manage state;
 4. SCSS to create styles;
+5. Axios to get data from API;
 
 ### Preview
 
