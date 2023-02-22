@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./Components/Header/Header";
-import Main from "Components/Main/Main";
+import Header from "Components/header/header";
+import Main from "Components/main/main";
 function App() {
   return (
     <div className="App">

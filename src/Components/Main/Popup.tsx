@@ -1,8 +1,8 @@
-import React from "react";
-import "../../styles/Main/Popup.scss";
-import confirmedIcon from "../../images/confirmedIcon.svg";
-import deathsIcon from "../../images/deathsIcon.svg";
-import recoveredIcon from "../../images/recoveredIcon.svg";
+import "../../styles/main/popup.scss";
+import confirmed from "../../images/confirmed.svg";
+import deaths from "../../images/deaths.svg";
+import recovered from "../../images/recovered.svg";
+
 const Popup = (props: any) => {
   return (
     <div className="popup">
@@ -10,21 +10,21 @@ const Popup = (props: any) => {
         <div className="country">{props.Country}</div>
         <div className="stats">
           <div className="statsleftSide">
-            <img src={confirmedIcon} />
+            <img src={confirmed} alt="confirmed" />
             Total Confirmed:
           </div>
           {props.TotalConfirmed}
         </div>
         <div className="stats">
           <div className="statsleftSide">
-            <img src={deathsIcon} />
+            <img src={deaths} alt="deaths" />
             Total Deaths:
           </div>
           {props.TotalDeaths}
         </div>
         <div className="stats">
           <div className="statsleftSide">
-            <img src={recoveredIcon} />
+            <img src={recovered} alt="recovered" />
             Total Recovered:
           </div>
           {props.TotalRecovered}

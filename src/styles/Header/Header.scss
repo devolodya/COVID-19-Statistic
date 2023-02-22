@@ -1,17 +1,20 @@
+@mixin flex{
+    display: flex;
+    align-items: center;
+}
+
 header{
     height: 240px;
     width: 100%;
     .container{
         width: 90%;
         height: 100%;
-        display: flex;
+        @include flex;
         justify-content: space-between;
-        align-items: center;
         margin: 0 auto;
         .logo{
         height: 100%;
-        display: flex;
-        align-items: center;
+        @include flex;
         justify-content: center;
         span{
             font-weight: 700;

@@ -1,13 +1,10 @@
-import React, { useState } from "react";
-import "../../styles/Main/MainItem.scss";
-import Popup from "./Popup";
+import { useState } from "react";
+import "../../styles/main/main-item.scss";
+import Popup from "./popup";
 const MainItem = (props: any) => {
   const [open, setOpen] = useState(false);
   const openCheck = () => {
-    if (!props.style) {
-      open ? setOpen(false) : setOpen(true);
-      console.log();
-    }
+    if (!props.style) open ? setOpen(false) : setOpen(true);
   };
   return (
     <div className="mainItem" style={props.style} onClick={openCheck}>

@@ -1,13 +1,12 @@
-import React from "react";
-import Search from "./Search";
-import "../../styles/Header/Header.scss";
+import Search from "./search";
+import "../../styles/header/header.scss";
 import logo from "../../images/logo.svg";
 const Header = () => {
   return (
     <header>
       <div className="container">
         <div className="logo">
-          <img src={logo} />
+          <img src={logo} alt="Logo" />
           <span>STATISTIC</span>
         </div>
         <Search />

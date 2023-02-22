@@ -1,15 +1,14 @@
-import React from "react";
-import "../../styles/Header/Search.scss";
+import "../../styles/header/search.scss";
 import { useDispatch } from "react-redux";
-import { sort } from "../../store/sort_slice";
+import { sort } from "../../store/sort-slice";
 const Search = () => {
   const dispatch = useDispatch();
-  const inputCheck = (e: any) => {
-    dispatch(sort(e.target.value));
-  };
   return (
     <div className="search">
-      <input placeholder="Search..." type="text" onChange={inputCheck} />
+      <input
+        placeholder="Search..."
+        onChange={(e) => dispatch(sort(e.target.value))}
+      />
     </div>
   );
 };
