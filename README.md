@@ -1,6 +1,6 @@
 # About Application
 
-COVID-19 Application, created for [Codempire](https://codempire.io/) by Volodymyr Kravets, which shows statistic by countries.
+COVID-19 Application, created by Volodymyr Kravets, which shows statistic by countries.
 
 ## Technologies
 
@@ -9,6 +9,7 @@ COVID-19 Application, created for [Codempire](https://codempire.io/) by Volodymy
 3. Redux Toolkit to easily manage state;
 4. SCSS to create styles;
 5. Axios to get data from API;
+6. Jest and Enzyme to test React Components
 
 ### Preview
 
